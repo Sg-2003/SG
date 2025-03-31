@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    
+    <script>
+        
+        function btn(){
+a=document.getElementById("n1").value
+document.getElementById("n").innerHTML=a
+
+ch=document.getElementById("ch").value
+document.getElementById("c").innerHTML=ch
+
+sil=document.getElementById("s1").value
+document.getElementById("s").innerHTML=sil
+
+adult=document.getElementById("adu").value
+document.getElementById("ad").innerHTML=adult
+
+child=document.getElementById("chi").value
+document.getElementById("chi1").innerHTML=child
+ 
+   
+ 
+
+
+
+
+
+
+switch(sil)
+{
+
+    case "silver":
+        total=(adult*200)+(child*100)
+        document.getElementById("f1").innerHTML=total
+        if(total<1000){
+
+document.getElementById("o1").innerHTML="nan"
+        }
+        else if(total>=1000 && total<1500)
+        {
+            document.getElementById("o1").innerHTML="popcorn and cold drink"
+        }
+else if(total>=1500 && total<2000)
+        {
+            document.getElementById("o1").innerHTML=" 2 popcorn and 2 cold drink"
+        }
+        else{
+            document.getElementById("o1").innerHTML=" 2 popcorn and 2 cold drink and lucky co"
+
+
+        }
+break;
+
+    case "Gold":
+        total=(adult*400)+(child*200)
+        document.getElementById("f1").innerHTML=total
+        if(total<1000){
+
+document.getElementById("o1").innerHTML="nan"
+        }
+        else if(total>=1000 && total<1500)
+        {
+            document.getElementById("o1").innerHTML="popcorn and cold drink"
+        }
+else if(total>=1500 && total<2000)
+        {
+            document.getElementById("o1").innerHTML=" 2 popcorn and 2 cold drink"
+        }
+        else{
+            document.getElementById("o1").innerHTML=" 2 popcorn and 2 cold drink and lucky co"
+
+
+        }
+break;
+        case "Platinum":
+        total=(adult*600)+(child*300)
+        document.getElementById("f1").innerHTML=total
+        if(total<1000){
+
+document.getElementById("o1").innerHTML="none"
+        }
+        else if(total>=1000 && total<1500)
+        {
+            document.getElementById("o1").innerHTML="popcorn and cold drink"
+        }
+else if(total>=1500 && total<2000)
+        {
+            document.getElementById("o1").innerHTML=" 2 popcorn and 2 cold drink"
+        }
+        else{
+            document.getElementById("o1").innerHTML=" 2 popcorn and 2 cold drink and lucky co"
+
+
+        }
+
+
+        }
+
+          
+
+        }
+    
+
+    </script>
+</head>
+<body>
+    
+    <center> <div style="background:linear-gradient(grey,white);width:50%;"><table>
+
+        <tr>
+            <h3 style="color: chartreuse;">Please Enter The Details:-</h3>
+            <td>Customer name:</td>
+   <td><input type="text" id="n1" ></td>
+        </tr>
+   <tr>
+<td><label>Choice your movie:</label></td>
+<td><select name="Movies" id="ch">
+    <option value="choice your movie">choice your movie</option>
+    <option value="Garder 2">Garder 2</option>
+    <option value="pathan">pathan</option>
+    <option value="Baagi 2">Baagi 2</option>
+    <option value="Raagni">Raagni</option>
+  </select>
+</td>
+</tr>
+<tr>
+<td>choice ticket:</td>
+<td><select name="Movies" id="s1">
+    <option value="choice your ticket">choice </option>
+    <option value="silver" id="au">Silver</option>
+    <option value="Gold">Gold</option>
+    <option value="Platinum">Paltinum</option>
+  </select>
+</td>
+<tr>
+<td><lable>No of adult:</lable></td>
+<td>  <input type="text" id="adu"></td>
+
+</tr>
+<tr>
+    <td><lable>No of child:</lable></td>
+    <td>  <input type="text" id="chi"></td>
+    
+    </tr>
+
+    <tr>
+        <td><lable>Fee</lable></td>
+        <td>  <input type="text" id="fe"></td>
+        
+        </tr>
+</tr>
+<tr>
+ <td><button onclick="btn()" style="color: brown;background-color: cyan;">Submit</button></td> 
+</tr>
+</table>
+</div>
+<br>
+<form>
+  <table class="table2" border="2" style="background-image:url(images\ tkt.jpeg);background-repeat:no-repeat;background-size:cover;background-position:center">
+    <th colspan="2"><h1 style="color: coral; text-align: center;">MOVIE-SALA</h1></th>
+    <tr>
+
+  <td>Customer Name:</td><td><p id="n"> </p></td>
+  </tr>
+  <tr><td>movie:</td><td><p id="c"></p></td></tr>
+   
+   <tr><td>ticket:</td><td><p id="s"></p></td>
+    <tr><td>No of adult:</td><td><p id="ad"></p></td>
+    <tr><td>No of child:</td><td><p id="chi1"></p></td>
+        </tr>
+        <tr>
+
+            <td>Fee:</td><td><p id="f1"> </p></td>
+            </tr>
+            <tr>
+
+                <td>offer</td><td><p id="o1"> </p></td>
+                </tr>
+    </table></center>
+</form>
+</body>
+</html>

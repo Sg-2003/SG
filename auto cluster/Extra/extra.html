@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function ch()
+        {
+            a=document.getElementById("t1").value
+            b=document.getElementById("t2").value
+            c=parseInt(a)+parseInt(b)
+            c1=parseInt(a)-parseInt(b)
+            c2=parseInt(a)*parseInt(b)
+            c3=parseInt(a)/parseInt(b)
+            document.getElementById("t3").value=c
+            document.getElementById("t4").value=c1
+            document.getElementById("t5").value=c2
+            document.getElementById("t6").value=c3
+        }
+    </script>
+    <style>
+        .a{font-family: Verdana, Geneva, Tahoma, sans-serif;color: hotpink;font-size:x-large;text-align: center;font-weight:bolder;background:linear-gradient(green,yellow);border-radius: 5%;} 
+        .b{color: black;font-family: Verdana, Geneva, Tahoma, sans-serif;font-size:x-large;text-align: center;font-weight:bolder;}
+    </style>
+</head>
+<body>
+    <div style="height: 200px;width: 30%; background-color:black;float: left;" class="a">ADD <br><input type="text" id="t3"></div>
+    <div style="height: 200px;width: 40%; background-color:white;float: left;"></div>
+    <div style="height: 200px;width: 30%; background-color:black;float: left;"class="a">SUB <br><input type="text" id="t4"></div>
+    <div style="height: 150px;width: 100%; background-color:white;float: left;"class="b">
+        ENTER FIRST NUMBER:-<input type="text" id="t1"><br><br>
+        ENTER SECOND NUMBER:-<input type="text" id="t2"><BR><br>
+            <input type="button" onclick="ch()" value="ENTER" style="background-color:red;"></div>
+    <div style="height: 200px;width: 30%; background-color:black;float: left;"class="a">MUL <br><input type="text" id="t5"></div>
+    <div style="height: 200px;width: 40%; background-color:white;float: left;"></div>
+    <div style="height: 200px;width: 30%; background-color:black;float: left;"class="a">DIV <br><input type="text" id="t6"></div>
+</body>
+</html>

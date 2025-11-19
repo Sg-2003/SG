@@ -1,0 +1,127 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family:sans-serif;
+    background: url();
+    background-attachment: fixed;
+}
+ nav{
+    background: rgba(0, 0, 0, 0.6);
+    height: 100px;
+    width: 100%;
+    left: 0;
+    right: 0;
+    box-sizing: border-box;
+    border-bottom: 1px;
+    padding: 10px 90px;
+ }
+ .fixed-navbar{
+   position: fixed;
+   z-index: 1; 
+}
+ .logo{
+    padding: 10px 10px;
+    height: 50px;
+    font-size: 50px;
+    font-weight: bold;
+    color:#fff;
+    text-transform: uppercase;
+    float: left;
+    font-family: monospace;
+ }
+ .d{
+   background-color:aquamarine;
+   text-align: center;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-weight: bold;
+   font-size: 25px;
+   color: crimson;
+   text-transform: uppercase;
+ }
+ .i{
+   font-size: 15px;
+   color: black;
+   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   text-transform: capitalize;
+ }
+ .p{
+   background-color: #fff;
+   border: 2px solid black;
+   width: 20%;
+   height: 200px;
+   margin-left: 3%;
+   border-radius: 0;
+   float: left;
+   border-radius: 5%;
+ }
+ .img{
+   height: 100%;
+   width: 100%;
+   border-radius: 4%;
+ }
+ .u{
+   margin-left: 5%;
+ }
+ nav ul{
+   list-style: none;
+   float: right;
+   margin: 0;
+   padding: 0;
+   display: flex;
+}
+nav ul li a{
+   line-height: 70px;
+   color: #fff;
+   padding: 10px 30px;
+   text-decoration: none;
+   font-size: 15px;
+   font-weight: bold;
+   text-transform: uppercase;
+}
+nav ul li a:hover{
+   background: rgba(0, 0, 0, 0.7);
+   border-radius: 10px;
+}
+p{
+   font-family: 'Times New Roman', Times, serif;
+   font-size: 30px;
+   font-weight: bold;
+   color: black;
+   margin-left: 5%;
+}
+footer{
+  background: rgba(0,0,0,0.9);
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  color:#fff;
+  text-align: center;
+  text-decoration: none;
+  font-size: 10px;
+}
+.img1{
+  padding: 0;
+  margin-top: 0.5%;
+  width: 5%;
+  height: 25px;
+  margin-left: 0.1%;
+}
+footer ul{
+  margin: 0;
+  padding: 0.8%;
+}
+h6{
+  font-size: 10px;
+  margin-top: 0.8%;
+}
+.s{
+  height: 315px;
+  font-size: 30px;
+  text-align: center;
+  color:gold;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.p:hover{
+      height: 250px;
+      width: 25%;
+}

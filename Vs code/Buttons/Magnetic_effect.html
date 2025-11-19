@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magnet</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins',sans-serif;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+            background: #222;
+            gap: 50px;
+        }
+        .btn{
+            position: relative;
+            width: 200px;
+            padding: 15px 20px;
+            background: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5em;
+            text-transform: uppercase;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            cursor: pointer;
+            text-decoration: none;
+            border-radius: 40px;
+            transition: transform 0.1s;
+            overflow: hidden;
+        }
+        .btn span{
+            position: relative;
+            pointer-events: none;
+            color: rgba(255, 255, 255, 0.25);
+            transition: 0.5s;
+        }
+        .btn:hover span{
+            color: rgba(255, 255, 255, 1);
+        }
+        .btn::before{
+            content: '';
+            position: absolute;
+            top: var(--y);
+            left: var(--x);
+            transform: translate(-50%,-50%);
+            background: var(--clr);
+            width: 0;
+            height: 0;
+            border-radius: 50%;
+            transition: 1s,left 0s,top 0s;
+        }
+    .btn:hover:before{
+        width: 200px;
+        height: 200px;
+    }
+    </style>
+</head>
+<body>
+    <a href="#" class="btn" style="--clr:#ff6464;"><span>Magnetic</span></a>
+    <a href="#" class="btn" style="--clr:#29aeef;"><span>Button</span></a>
+    <script>
+        let btn = document.querySelectorAll('.btn').forEach(btn => {
+            btn.addEventListener('mousemove',(e)=>{
+                let x = e.offsetX;
+                let y = e.offsetY;
+                let btnWidth = btn.clientWidth;
+                let btnHeight = btn.clientHeight;
+                let transX = (x - btnWidth/2);
+                let transY = (y - btnHeight/2);
+                btn.style.transform = `translateX(${transX}px) translateY(${transY}px)`;
+
+                let mx = e.pageX - btn.offsetLeft;
+                let my = e.pagey - btn.offsetTop;
+                btn.style.setProperty('--x', mx + 'px');
+                btn.style.setProperty('--y', my + 'px');
+            })
+            btn.addEventListener('mouseout',(e)=>{
+            btn.style.transform = ''; 
+        })
+        })
+    </script>
+</body>
+</html>

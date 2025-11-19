@@ -1,0 +1,49 @@
+/* .a1{
+    background-color: blue; width: 100%; height: 50px; float: left;
+    text-align: center;
+} */
+nav{
+    background-color: rgba(0,0,0,0.6);
+    height: 100px;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    font-weight: bold;
+    padding-top: 2.5%;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(sea\ water.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+div{
+    height: 150px;
+    width: 12%;
+    border-radius: 100%;
+    background-color:rgba(0,0,0,0.6);
+    position: relative;
+    top: 147px;
+    left: 550px;
+    background-attachment: fixed;
+    /* z-index: 0; */
+}
+.div1{
+    height: 500px;
+    width: 40%;
+    border-radius: 10%;
+    background-color:rgba(0,0,0,0.6);
+    top: 35%;
+    left: 27%;
+    position: fixed;
+    z-index: 1;
+}
+img{
+    height: 100%;
+    width: 100%;
+}

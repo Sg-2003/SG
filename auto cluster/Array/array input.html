@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>    
+    ar=[1,"Ajay",5.5]
+          function input()
+        {
+            a=document.getElementById("t1").value
+      
+            ar.push(a)
+        }
+        function show()
+        {
+            document.getElementById("print").innerHTML=ar
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="t1" >
+    <input type="button" onclick="input()" value="INSERT">
+    <input type="button" onclick="show()" value="SHOW">
+    <p id="print"></p>
+</body>
+</html>

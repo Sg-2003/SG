@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Particle_Js</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            overflow: hidden;
+            font-family: sans-serif;
+        }
+        ul{
+            position: absolute;
+            top: 0;
+            left: 0;
+            margin: 0;
+            padding: 0;
+        }
+        ul li{
+            position: relative;
+            list-style: none;
+            height: 33.3vh;
+            width: 100vw;
+        }
+        #particles1,
+        #particles2,
+        #particles3{
+            height: 100%;
+        }
+        #particles1{
+            background: #f93;
+        }
+        #particles3{
+            background: #138808;
+        }
+        ul li img{
+            position: absolute;
+            height: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            animation: animate 25s linear infinite;
+        }
+        ul li h1{
+            position: absolute;
+            width: 40%;
+            margin: 15px 0 0;
+            padding: 0;
+            font-size: 4em;
+            text-align: right;
+            text-transform: uppercase;
+        }
+        ul li h2{
+            position: absolute;
+            right: 0;
+            width: 40%;
+            margin: 25px 0 0;
+            padding: 0;
+            font-size: 12em;
+            text-transform: uppercase;
+        }
+        @keyframes animate {
+            0%{
+                transform: translateX(-50%) rotate(0deg);
+            }
+            100%{
+                transform: translateX(-50%) rotate(360deg);
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <ul>
+        <li><div id="particles1"></div></li>
+        <li><div id="particles2">
+            <img src="Ashoka_Chakra.png">
+            <h1>Happy Independence Day 2023</h1>
+            <h2>INDIA</h2>
+        </div></li>
+        <li><div id="particles3"></div></li>
+    </ul>
+    <script type="text/javascript" src="particles.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+</body>
+</html>

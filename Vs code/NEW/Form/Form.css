@@ -1,0 +1,19 @@
+body{
+    font-family: 'Poppins',sans-serif;
+}
+h1{
+   text-transform: uppercase;
+   text-align: center;
+}
+h2{
+    text-transform: uppercase;
+    text-align: center;
+    margin: -20px;
+}
+.first-1{
+    height: 200px;
+    width: 80%;
+    margin-top: 5%;
+    margin-left: 2%;
+    text-transform: uppercase;
+}

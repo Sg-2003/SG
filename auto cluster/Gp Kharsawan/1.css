@@ -1,0 +1,38 @@
+.div1{
+    background-color:red;
+     height:100px;
+      width:100%;
+      float:left
+    }
+.div2{
+    background-color:green; 
+    height:100px; 
+    width:20%;
+    float:left
+}
+.div3{
+    background-color:yellow;
+     height:100px; 
+     width:60%;
+     float:left
+    }
+.div4{
+    height:100px;
+    width:25%;
+    float:left
+}
+img{
+    height: 100px;
+    width: 100%;
+}
+.div5{
+    height:100px;
+    width:75%;
+    float:left
+}
+.div6{
+    background-color:grey; 
+    height:100px;
+    width:25%;
+    float:left
+}

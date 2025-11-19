@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  .RX{
+    height: 100vh;
+    width: 100%;
+    background-image: url(https://images.pexels.com/photos/1324803/pexels-photo-1324803.jpeg?cs=srgb&dl=pexels-matthew-montrone-230847-1324803.jpg&fm=jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow-x: hidden;
+  }
+  .road{
+    height: 250px;
+    width: 500%;
+    display: block;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/023/454/129/original/empty-asphalt-road-four-lanes-in-isolated-on-transparent-background-straight-road-line-png.png);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    animation: road 5s linear infinite;
+  }
+  .bike{
+    width: 400px;
+    left: 20%;
+    bottom: -6%;
+    transform: translateX(-50%);
+    position: absolute;
+    z-index: 2;
+    animation: bike 10s linear infinite;
+  }
+  @keyframes road{
+    100%{
+        transform: translateX(-3400px);
+    }
+  }
+  @keyframes bike{
+    100%{
+        transform: translateX(1300px);
+    }
+  }

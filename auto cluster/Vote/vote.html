@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <script>
+        function ch(){
+             a=document.getElementById("t1").value
+             if(a<18)
+             {
+                document.getElementById("d1").innerHTML="you are not eligible for vote"
+             }
+             else
+             {
+                document.getElementById("d1").innerHTML="you are eligible for vote"
+             }
+        }
+     </script>
+</head>
+<body>
+    <input type="text" id="t1">
+    <input type="button" onclick="ch();" value="ENTER" style="background-color: darkred;">
+    <P id="d1"></P>
+</body>
+</html>

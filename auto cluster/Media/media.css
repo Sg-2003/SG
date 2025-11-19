@@ -1,0 +1,40 @@
+.media1{
+    border-radius: 20px;
+    border-color: brown;
+    border-style: dashed;
+    font-size: 20px;
+}
+.p_media1{
+    font-size:0.5em;
+}
+.p_media2{
+    font-size:1em;
+}
+@media screen and (max-width:500px)
+{
+    .media1
+    {
+        background-color: green;
+        font-size: 30px;
+         color: beige;
+         font-family:cursive;
+        background-image: url(/Users/HP/Dropbox/PC/Desktop/download.jpg);
+        background-size: cover;
+    }
+}
+@media screen and (max-width:200px)
+{
+    .media1
+    {
+        background-color: yellow;
+        background-image: none;
+        font-family: 'Courier New', Courier, monospace;
+        color: red;
+        font-weight: bold;
+        font-style: italic;
+        font-size: 50px;
+        margin-top: 200px;
+    }
+}
+
+    

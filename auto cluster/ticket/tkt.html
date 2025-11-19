@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function btn(){
+            a=document.getElementById("n1").value 
+            document.getElementById("n").innerHTML=a
+            
+            choice=document.getElementById("ch1").value 
+            document.getElementById("ch").innerHTML=choice
+
+            silver=document.getElementById("sil1").value
+            document.getElementById("sil").innerHTML=silver
+
+            child=document.getElementById("chil1").value
+            document.getElementById("chil").innerHTML=child
+
+            adult=document.getElementById("adu1").value 
+            document.getElementById("adu").innerHTML=adult
+
+            switch(silver)
+            {
+                case "silver":
+                    total=(adult*200)+(child*100)
+                    document.getElementById("f1").innerHTML=total
+                    if(total<1000)
+                    {
+                        document.getElementById("o1").innerHTML="NONE"
+                    }
+                    else if(total>=1000 && total<=1500)
+                    {
+                        document.getElementById("o1").innerHTML="popcorn and cold drink"
+                    }
+                    else if(total>=1200 && total<=1500)
+                    {
+                        document.getElementById("o1").innerHTML="2 popcorn and 2 cold drink"
+                    }
+                    else
+                    {
+                        document.getElementById("o1").innerHTML="2 popcorn and 2 cold drink and a lucky coin"
+                    }
+                break;
+                    case "Gold":
+                    total=(adult*400)+(child*200)
+                    document.getElementById("f1").innerHTML=total
+                    if(total<1000)
+                    {
+                        document.getElementById("o1").innerHTML="NONE"
+                    }
+                    else if(total>=1000 && total<=1500)
+                    {
+                        document.getElementById("o1").innerHTML="popcorn and cold drink"
+                    }
+                    else if(total>=1200 && total<=1500)
+                    {
+                        document.getElementById("o1").innerHTML="2 popcorn and 2 cold drink"
+                    }
+                    else
+                    {
+                        document.getElementById("o1").innerHTML="2 popcorn and 2 cold drink and a lucky coin"
+                    }
+                break;
+                    case "platinum":
+                    total=(adult*600)+(child*300)
+                    document.getElementById("f1").innerHTML=total
+                    if(total<1000)
+                    {
+                        document.getElementById("o1").innerHTML="NONE"
+                    }
+                    else if(total>=1000 && total<=1500)
+                    {
+                        document.getElementById("o1").innerHTML="popcorn and cold drink"
+                    }
+                    else if(total>=1200 && total<=1500)
+                    {
+                        document.getElementById("o1").innerHTML="2 popcorn and 2 cold drink"
+                    }
+                    else
+                    {
+                        document.getElementById("o1").innerHTML="2 popcorn and 2 cold drink and a lucky coin"
+                    }
+                    break;
+            }
+        }
+    </script>
+</head>
+<body>
+    <center> <div style="background:linear-gradient(grey,white);width:50%;"><table>
+
+        <tr>
+            <h3 style="color: chartreuse;">Cinama</h3>
+            <td>Customer name:</td>
+   <td><input type="text" id="n1" ></td>
+        </tr>
+   <tr>
+<td><label>Choice your movie:</label></td>
+<td><select name="Movies" id="ch">
+    <option value="choice your movie">choice your movie</option>
+    <option value="Garder 2">Garder 2</option>
+    <option value="pathan">pathan</option>
+    <option value="Baagi 2">Baagi 2</option>
+    <option value="Raagni">Raagni</option>
+  </select>
+</td>
+</tr>
+<tr>
+<td>choice ticket:</td>
+<td><select name="Movies" id="sil1">
+    <option value="choice your ticket">choice </option>
+    <option value="silver" id="adu">Silver</option>
+    <option value="Gold">Gold</option>
+    <option value="Platinum">Paltinum</option>
+  </select>
+</td>
+<tr>
+<td><lable>No of adult:</lable></td>
+<td>  <input type="text" id="adu"></td>
+
+</tr>
+<tr>
+    <td><lable>No of child:</lable></td>
+    <td>  <input type="text" id="chil"></td>
+    
+    </tr>
+
+    <tr>
+        <td><lable>Fee</lable></td>
+        <td>  <input type="text" id="fe"></td>
+        
+        </tr>
+</tr>
+<tr>
+ <td><button onclick="btn()" style="color: brown;background-color: cyan;">Submit</button></td> 
+</tr>
+</table>
+</div>
+
+<form>
+  <table class="table2" border="2">
+    <th colspan="2"><h1 style="color: coral;">P&M</h1></th>
+    <tr>
+
+  <td>Customer Name:</td><td><p id="n"> </p></td>
+  </tr>
+  <tr><td>movie:</td><td><p id="chil"></p></td></tr>
+   
+   <tr><td>ticket:</td><td><p id="sil"></p></td>
+    <tr><td>No of adult:</td><td><p id="adu"></p></td>
+    <tr><td>No of child:</td><td><p id="chil1"></p></td>
+        </tr>
+        <tr>
+
+            <td>Fee:</td><td><p id="f1"> </p></td>
+            </tr>
+            <tr>
+
+                <td>offer</td><td><p id="o1"> </p></td>
+                </tr>
+    </table></center>
+</form>
+</body>
+</html>

@@ -1,0 +1,21 @@
+.p1{
+    background-color: red;
+    height: 100px;
+    width: 25%;
+    position: absolute;
+    top: 25px;   
+}
+.p2{
+    background-color: yellow;
+    height: 100px;
+    width: 25%;
+    position: relative;
+    left: 25px;   
+}
+.p3{
+    background-color: green;
+    height: 100px;
+    width: 25%;
+    position: fixed;
+    bottom: 25px;   
+}

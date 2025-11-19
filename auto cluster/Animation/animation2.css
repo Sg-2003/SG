@@ -1,0 +1,12 @@
+@keyframes rote {
+    0%{background-color: blue;list-style-type: lower-alpha;}    
+    25%{background-color: yellow;list-style-type: upper-roman;}
+    50%{background-color: red;list-style-type:lower-roman;}
+    75%{background-color: green;list-style-type:upper-alpha;}
+    100%{background-color: orange;list-style:circle;}
+}
+.p1{
+    animation-name:rote ;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}

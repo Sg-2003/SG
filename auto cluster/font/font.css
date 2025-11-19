@@ -1,0 +1,22 @@
+.div1{
+     
+    font-size: 50px;
+    color: red;
+    font-family: verdana;
+    font-style: italic;
+    direction: ltr;
+    /* text-align: center; */
+    font-weight: bold;
+     font-variant: small-caps;  
+    /* text-transform: capitalize;  */
+    text-decoration: underline;
+    word-spacing: 5px;
+    letter-spacing: 5px;
+    text-shadow: 5px 5px 5px;
+}
+body{
+    background-image: url(/Users/HP/Desktop/download.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+ 

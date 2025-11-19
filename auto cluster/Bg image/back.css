@@ -1,0 +1,27 @@
+ *{
+    margin: 0;
+    padding: 0;
+ }
+ body{
+    background-image: url(https://img.freepik.com/free-photo/autumn-leaf-falling-revealing-intricate-leaf-vein-generated-by-ai_188544-9869.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+ }
+h1{
+     text-align: center;
+     font-family: sans-serif;
+     padding: 1%;
+     text-transform: uppercase;
+     color: aqua;
+}
+ p{
+   text-align:left;
+   color: lightblue;
+   font-family: verdana;
+   text-transform:uppercase;
+   padding:1%;
+ }
+ li{
+   color: beige;
+   
+ }

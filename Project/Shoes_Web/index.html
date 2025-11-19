@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Shoes Website</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">
+            <img src="https://pngimg.com/d/nike_PNG9.png" alt="Nike">
+        </a>
+        <ul class="navbar">
+            <li><a href="#">Men</a></li>
+            <li><a href="#">Women</a></li>
+            <li><a href="#">Kids</a></li>
+            <li><a href="#">Sale</a></li>
+            <li><a href="#">What's New</a></li>
+        </ul>
+        <div class="nav-right">
+            <a href="#"><i class="ri-search-line"></i></a>
+            <a href="#"><i class="ri-shopping-cart-2-line"></i></a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="hero-img" data-aos="zoom-in" data-aos-duration="2000">
+            <img src="hero1.png" class="one">
+        </div>
+        <div class="hero-text">
+            <h1 data-aos="fade-right" data-aos-duration="1500">Nike Air <br> Dunk-270</h1>
+            <p data-aos="flip-down" data-aos-duration="1400" data-aos-delay="200">
+                Nike's 1st Lifestyle Air Max returns with a vibrant color
+                gradient that's sure to turn heads.vibrant color gradient
+                that's sure to turn heads.
+            </p>
+            <h5 data-aos="zoom-in" data-aos-duration="1400" data-aos-delay="300">$240.00</h5>
+            <div class="hero-btnn" data-aos="flip-down" data-aos-duration="1400" data-aos-delay="400">
+                <a href="#" class="btn">Add to bag</a>
+                <a href="#" class="btn2">View Details</a>
+            </div>
+        </div>
+    </section>
+    <div class="content">
+        <div class="box" data-aos="zoom-in-right" data-aos-duration="1200" data-aos-delay="100">
+            <li><img src="p1.png" onclick="slider('hero1.png')"></li>
+        </div>
+        <div class="box" data-aos="zoom-out-left" data-aos-duration="1300" data-aos-delay="150">
+            <li><img src="p2.png" onclick="slider('hero2.png')"></li>
+        </div>
+        <div class="box" data-aos="zoom-in-right" data-aos-duration="1300" data-aos-delay="200">
+            <li><img src="p3.png" onclick="slider('p3.png')"></li>
+        </div>
+    </div>
+    <a href="#" class="scroll" data-aos="zoom-out-left" data-aos-duration="1200" data-aos-delay="300">
+        <i class="ri-scroll-to-bottom-line"></i></a>
+    <script src="script.js" type="text/javascript"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 1,
+      });
+    </script>
+</body>
+</html>

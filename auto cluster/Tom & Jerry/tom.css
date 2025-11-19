@@ -1,0 +1,17 @@
+@keyframes rote {
+    0%{transform: rotate(0deg);background-color:white;}    
+    25%{transform: rotate(60deg);background-color:white;}
+    50%{transform: rotate(120deg);background-color:white;}
+    75%{transform: rotate(180deg);background-color:white;}
+    100%{transform: rotate(360deg);background-color: white;}
+}
+.p1{
+    height: 250px;
+    width: 250px;
+    border: 2px solid black;
+
+    animation-name: rote;
+    animation-duration: 5s;
+    animation-delay: 0s;
+    animation-iteration-count:infinite;
+}

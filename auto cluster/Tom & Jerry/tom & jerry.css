@@ -1,0 +1,52 @@
+body{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+.loader{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    perspective: 500px;
+}
+.tom,
+.jerry{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-image: url(https://www.redwolf.in/image/cache/catalog/stickers/tom-face-sticker-india-600x800.jpg?m=1687858270);
+    background-size: cover;
+    border-radius: 50%;
+}
+.tom{
+    animation: tomMove 2s linear infinite;
+}
+.jerry{
+    background-image: url(https://www.redwolf.in/image/cache/catalog/stickers/jerry-face-sticker-india-600x800.jpg?m=1687857111);
+    animation: jerryMove 2s linear infinite;
+}
+@keyframes tomMove{
+    0%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(50px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+@keyframes jerryMove{
+    0%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(-50px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}

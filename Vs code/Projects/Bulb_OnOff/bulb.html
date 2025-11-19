@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb On/Off</title>
+    <style>
+        body{
+            background: #000;
+        }
+    </style>
+    <script type="text/javascript">
+       function  light(show) {
+        var pic;
+        if (show == 0){
+            pic ="bulb_off.png";
+        }
+        else{
+            pic ="bulb_on.png";
+        }
+        document.getElementById('bulb').src = pic;
+       }
+    </script>
+</head>
+<body>
+    <center> 
+    <img src="bulb_off.png" alt="" id="bulb" width="150px" height="180px">
+    <p>
+        <button type="button" onclick="light(1)">ON</button>
+        <button type="button" onclick="light(0)">OFF</button>
+    </p>
+</center>
+</body>
+</html>

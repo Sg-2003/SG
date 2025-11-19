@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive slider by Sg Developer</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200..1000&display=swap');
+        :root{
+          --bg-clr:#222;
+          --text-clr:#fff;
+          --accent-clr:#a01b36;
+        }
+        *{
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          font-family: "Quicksand", sans-serif;
+        }
+        body{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          min-height: 100vh;
+          background: var(--bg-clr);
+        }
+        .title{
+          font-family: "Acme", sans-serif;
+          font-size: clamp(1.8rem, 6vw, 3rem);
+          letter-spacing: 3px;
+          line-height: 1.1;
+          font-weight: 600;
+          color: var(--accent-clr);
+          text-shadow: 1px 1px 2px #ff0000, 
+                       0 0 12px var(--accent-clr),
+                       0 0 8px #0000ff;
+          text-align: center;
+          margin: 0 30px 40px;
+        }
+        .slider-container{
+          width: 80%;
+        }
+        .swiper{
+          width: 100%;
+          height: 100%;
+          padding: 35px 40px 5px;
+        }
+        .swiper-slide{
+          max-width: 100%;
+          width: 300px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          border-radius: 10px;
+        }
+        .swiper-slide img{
+          max-width: 100%;
+          aspect-ratio: 1/1;
+          object-fit: cover;
+          border-radius: inherit;
+          margin-bottom: 50px;
+          transform: rotate(0);
+          transition: all 0.5s ease;
+          user-select: none;
+          cursor: pointer;
+        }
+        .swiper-slide-active img{
+          border-radius: 50%;
+          transform: rotate(3deg);
+          box-shadow: -1px 1px 25px 12px var(--accent-clr);
+        }
+        .swiper-slide p{
+          text-align: center;
+          color: var(--text-clr);
+          width: max-content;
+          background-color: var(--bg-clr);
+          box-shadow: -1px 1px 12px 6px var(--accent-clr);
+          border-radius: 8px;
+          padding: 14px;
+          font-size: 0.9rem;
+          font-weight: 600;
+          opacity: 0;
+          transition: all 0.7s ease-in-out 0.4s;
+        }
+        .swiper-slide-active p{
+          opacity: 1;
+          transform: translateY(-10px);
+        }
+        @media (max-width:900px) {
+          .swiper-slide{
+            width: 240px;
+          }
+        }
+        @media (max-width:500px) {
+          .swiper-slide{
+            width: 220px;
+          }
+          .swiper-slide p{
+            font-size: 0.8rem;
+            padding: 10px;
+          }
+        }
+        </style>
+</head>
+<body>
+     <h1 class="title">The featured anime movies</h1>
+     <div class="slider-container">
+<div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="https://cdn.anisearch.com/images/anime/cover/16/16901_600.webp" alt="">
+        <p>The Imaginary</p>
+      </div>
+      <div class="swiper-slide">
+        <img src="https://occ-0-2794-2219.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABeDjRazFCC3Dz2seDU6hr9G2kA9UEWESwECfUuShfcHtK73GntyG40r14VWuceWjO4z-3JLQf-At5nNLVg0BopdOoxCplEGgVjFw.jpg?r=cca" alt="">
+        <p> Sword of the Wizard King</p>
+      </div>
+      <div class="swiper-slide">
+        <img src="https://static.wikia.nocookie.net/jujutsu-kaisen/images/e/e2/Jujutsu_Kaisen_Movie_Key_Visual_2_%28Cleaned%29.png/revision/latest?cb=20210613144506" alt="">
+        <p>Jujutsu Kaisen</p>
+      </div>
+      <div class="swiper-slide">
+        <img src="https://occ-0-2794-2219.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABV1tDJfwnX4jaFnblJF-IdBCNlIQPbXmpfqzppifBMqBlSFFy8eCXouAc1cr9nLFO4ryMEpEXtYAC5ynHUfsZ35R1ItGjGhhkTmT.jpg?r=7d8" alt="">
+        <p>Drifting Home</p>
+      </div>
+      <div class="swiper-slide">
+        <img src="https://miro.medium.com/v2/resize:fit:1080/1*RI-3mGniH32jJiBpQKn6nA.jpeg" alt="">
+        <p>Spirited Away</p>
+      </div>
+      <div class="swiper-slide">
+        <img src="https://miro.medium.com/v2/resize:fit:1400/1*ykY1yC2qCv_W-tcU8368vQ.jpeg" alt="">
+        <p>Bubble</p>
+      </div>
+      <div class="swiper-slide">
+        <img src="https://u.livechart.me/anime/9614/poster_image/152246920a3678da3d44f020c793465c.png/large.jpg" alt="">
+        <p>Kimetsu no Yaiba</p>
+      </div>
+      <div class="swiper-slide">
+        <img src="https://p16-va.lemon8cdn.com/tos-maliva-v-ac5634-us/oYfqQLGzstUqXgAV9fIQ8HieeAoAOCA3fueo5N~tplv-tej9nj120t-origin.webp" alt="">
+        <p>A Whisker Away</p>
+      </div>
+      <div class="swiper-slide">
+        <img src="https://www.japantimes.co.jp/uploads/imported_images/uploads/2018/08/p12-schley-flavorsrev-a-20180802.jpg" alt="">
+        <p>Flavors of Youth</p>
+      </div>
+    </div>
+  </div>
+     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".swiper",{
+        centeredSlides: true,
+        loop: true,
+        slidesPerView: "auto",
+        speed: 400,
+        freeMode: false,
+        mousewheel: {
+        thresholdDelta: 70,
+        },
+        keyboard: {
+        enabled: true,
+        onlyInViewport: true,
+        },
+        breakpoints: {
+        0: {
+          spaceBetween: 50,
+        },
+        900: {
+          spaceBetween: 70,
+        },
+        1100: {
+          spaceBetween: 90,
+        },
+
+        }
+      })
+    </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+     function ch(){
+            a=document.getElementById("t1").value
+            b=document.getElementById("t2").value
+            c=document.getElementById("t3").value
+            d=document.getElementById("t4").value
+            e=document.getElementById("t5").value
+            
+            f=parseInt(a)+parseInt(b)+parseInt(c)+parseInt(d)+parseInt(e)
+            document.getElementById("t6").innerHTML=f
+
+            g=f/5
+            document.getElementById("t7").innerHTML=g
+
+            if(a>=33 && b>=33 && c>=33 && d>=33 && e>=33)
+            {
+                document.getElementById("d1").innerHTML="PASS"
+            }
+            else
+            {
+                document.getElementById("d1").innerHTML="FAIL"
+            }
+        }
+    </script>
+</head>
+<body>
+   <center> <div style="background: linear-gradient(skyblue,aqua);border-radius: 5%; width: 50%;margin-top: 10%;">
+    <h1 style="font-family: serif; color: maroon;">Check Pass/Fail Student Here</h1> 
+     <input type="text" id="t1" placeholder="ENGLISH"> <br><br>
+    <input type="text" id="t2" placeholder="HINDI"> <br><br>
+    <input type="text" id="t3" placeholder="MATHEMATICS"> <br><br>
+    <input type="text" id="t4" placeholder="SCIENCE"> <br><br>
+    <input type="text" id="t5" placeholder="SOCIAL SCIENCE"><br><br>
+    <input type="button" onclick="ch()" value="ENTER" style="background-color:gray;">
+    <P id="t6">TOTAL MARKS</P>
+    <P id="t7">AVERAGE</P>
+    <P id="d1">PASS/FAIL</P>
+</div></center>
+</body>
+</html>

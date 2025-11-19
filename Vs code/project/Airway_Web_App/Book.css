@@ -1,0 +1,28 @@
+nav{
+    background: rgba(0,0,0,0.6);
+    height: 100px;
+    width: 100%;
+    box-sizing: border-box;
+    border-bottom: 1px;
+    left: 0;
+    right: 0;
+    padding: 10px 90px;
+    position: fixed;
+    font-size: 40px;
+    color: aliceblue;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background:url(2.jpeg);
+    font-size: 25px;
+    background-size: cover;
+    background-attachment: fixed;
+}
+i{
+    position: fixed;
+    top: 30%;
+    left: 35%;
+    font-weight: bold;
+    color: coral;
+}

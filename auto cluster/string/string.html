@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESULT</title>
+    <script>
+        function sub(){
+            a=document.getElementById("t1").value
+            document.getElementById("h1").innerHTML=a
+            b=document.getElementById("t2").value
+            document.getElementById("h2").innerHTML=b
+            c=document.getElementById("t3").value
+            document.getElementById("h3").innerHTML=c
+            d=document.getElementById("t4").value
+            document.getElementById("h4").innerHTML=d
+            e=document.getElementById("t5").value
+            document.getElementById("h5").innerHTML=e
+
+            f=parseInt(a)+parseInt(b)+parseInt(c)+parseInt(d)+parseInt(e)
+            document.getElementById("h6").innerHTML=f
+
+            g=f/5
+            document.getElementById("h7").innerHTML=g
+            
+            if(g>=33){
+            document.getElementById("t6").innerHTML="Pass"
+            document.getElementById("t6").style.backgroundColor="GREEN"
+            }
+            else{
+                document.getElementById("t6").innerHTML="Fail"
+                document.getElementById("t6").style.backgroundColor="RED"  
+            }
+            
+            if(g>=33 && g<=50) {
+                document.getElementById("t7").innerHTML="C"
+            }
+            else if(g>=51 && g<=75) {
+                document.getElementById("t7").innerHTML="B"
+            }
+            else if(g>=76 && g<=90) {
+                document.getElementById("t7").innerHTML="A"
+            }
+            else if(g>=91 && g<=100) {
+                document.getElementById("t7").innerHTML="A+"
+            }
+            else if(g>=0 && g<=32) {
+                document.getElementById("t7").innerHTML="D"
+            }
+          
+        }
+    </script>
+</head>
+<body>
+   <CEnter><div class="d"> 
+    <style>
+     .d{
+         background:linear-gradient(yellow,white);
+         width: 50%; 
+         border-radius: 2%; 
+        }
+       h1{
+        font-size: 2.2rem;
+        color: #333;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      h2{
+        font-family: Arial, Helvetica, sans-serif;
+        color: orangered;
+        font-size: 1.6rem;
+        text-transform: uppercase;
+      }
+   </style> 
+   <h1>JAC 10th Board Result 2023 Declared</h1>
+   <h2>Check Now</h2>
+   <input type="text" id="t1" placeholder="HINDI"><br><br>
+     <input type="text" id="t2" placeholder="ENGLISH"><br><br>
+     <input type="text" id="t3" placeholder="MATH"><br><br>
+     <input type="text" id="t4" placeholder="SCIENCE"><br><br>
+     <input type="text" id="t5" placeholder="SOCIAL SCIENCE"><br><br>
+     <input type="button" value="ENTER" onclick="sub()"><br><br></CEnter>
+     <center></div><br>
+    <div> 
+     <table border="1">        
+<tr>
+    <th>HINDI</th>
+    <th>ENGLISH</th>
+    <th>MATH</th>
+    <th>SCIENCE</th>
+    <th>SOCIAL SCIENCE</th>
+    <th>FULL MARKS</th>
+    <th>PASS MARKS</th>
+    <th>OBTAIN MARKS</th>  
+    <th>AVERAGE</th>  
+    <th>PASS/FAIL</th>
+    <th>GRADE</th>
+</tr>
+  <tr>
+    <td id="h1"></td>
+    <td id="h2"></td>
+    <td id="h3"></td>
+    <td id="h4"></td>
+    <td id="h5"></td>
+    <td>100</td>
+    <td>165</td>
+    <td id="h6"></td>
+    <td id="h7"></td>
+    <td id="t6"></td>
+    <td id="t7"></td>
+  </tr>
+ </table></div></center>
+</body>
+</html>

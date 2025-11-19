@@ -1,0 +1,47 @@
+body{
+    margin: 0;
+    overflow-y: hidden;
+    background: linear-gradient(0.25turn,#3f87a6,#ebf8e1,#f69d3c);
+}
+.night{
+    height: 80vh;
+    width: 70vw;
+    margin: 5rem auto;
+    background: url(Img_1.png);
+    background-size: cover;
+    position: relative;
+    box-shadow: 1px 2px 60px rgba(0, 0, 0, .4);
+    overflow-x: hidden;
+}
+.surface{
+    height: 140px;
+    width: 500%;
+    background: url(Img_02.png);
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    animation: moving 6s linear infinite;
+}
+.car{
+    position: absolute;
+    bottom: 8%;
+    left: 24%;
+    animation: carSuspension 2s linear infinite;
+}
+@keyframes moving {
+    100%{
+        transform: translateX(-2950px);
+    }
+}
+@keyframes carSuspension{
+    100%{
+        transform: translateY(-1px);
+    }
+    50%{
+        transform: translateY(2px);
+    }
+    0%{
+        transform: translateY(-1px);
+    }
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <script>
+        function btn()
+        {
+            a=document.getElementById("n").value
+
+            switch(a)
+            {
+                case "1":document.getElementById("anim").style.animationName="rotate"
+                break;
+                case "2":document.getElementById("anim").style.animationName="scale"
+                break;
+                case "3":document.getElementById("anim").style.animationName="skew"
+            }
+        }
+    </script>
+</head>
+<body>
+   <CEnter><input type="number" placeholder=" . . . . .Enter a Number. . . . . " id="n"><BR></BR>
+    <input type="button" value="Enter" onclick="btn()"></CEnter>
+    <div class="anim" id="anim">
+        <p>Ball</p> 
+    </div>
+    <STYle>
+        body{
+    background-image: linear-gradient(120deg, white,grey, black);
+    background-attachment: fixed;
+}
+
+.anim{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color:hotpink;
+    margin-top: 200px;
+    margin-left: 0px;
+    animation-delay: 0s;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotate {
+    0%{position: absolute; transform: rotate(0deg); left: 0px;}
+    10%{position: absolute; transform: rotate(36deg); left: 100px; background-color: green;}
+    20%{position: absolute; transform: rotate(72deg); left: 200px; background-color: rgb(218, 70, 186);}
+    30%{position: absolute; transform: rotate(108deg); left: 300px; background-color: orange;}
+    40%{position: absolute; transform: rotate(144deg); left: 400px; background-color: aqua;}
+    50%{position: absolute; transform: rotate(180deg); left: 500px; background-color: blueviolet;}
+    60%{position: absolute; transform: rotate(216deg); left: 600px; background-color: yellow;}
+    70%{position: absolute; transform: rotate(252deg); left: 700px; background-color: maroon ;}
+    80%{position: absolute; transform: rotate(288deg); left: 800px; background-color: purple;}
+    90%{position: absolute; transform: rotate(324deg); left: 900px; background-color: chartreuse;}
+    100%{position: absolute; transform: rotate(360deg); left: 1000px; background-color:beige;}
+}
+
+@keyframes scale {
+     0%{position: absolute; transform: scale(0.5, 1);}
+     10%{position: absolute; transform: scale(1.3, 2); background-color: rgb(118, 118, 219);}
+     20%{position: absolute; transform: scale(2, 3); background-color: blueviolet;}
+     30%{position: absolute; transform: scale(1, 0.5); background-color: rgb(241, 243, 97);}
+     40%{position: absolute; transform: scale(0.3, 2); background-color: green;}
+     60%{position: absolute; transform: scale(1, 2.5); background-color: rgb(216, 125, 204);}
+     70%{position: absolute; transform: scale(2.9, 3.5); background-color: blueviolet;}
+     80%{position: absolute; transform: scale(1, 0.5); background-color: rgb(124, 233, 110);}
+     100%{position: absolute; transform: scale(0.3, 2); background-color: rgb(110, 108, 240);}
+}
+
+@keyframes skew {
+    0%{position: absolute; transform: skew(35deg);}
+    10%{position: absolute; transform: skew(30deg); background-color: blue;}
+    20%{position: absolute; transform: skew(200deg, 100deg); background-color: blueviolet;}
+    30%{position: absolute; transform: skew(100deg, 50deg); background-color: red;}
+    40%{position: absolute; transform: skew(30deg, 200deg); background-color: green;}
+    60%{position: absolute; transform: skew(150deg, 106deg); background-color: blue;}
+    70%{position: absolute; transform: skew(210deg, 150deg); background-color: blueviolet;}
+    80%{position: absolute; transform: skew(130deg, 55deg); background-color: red;}
+    100%{position: absolute; transform: skew(38deg, 26deg); background-color: green;}
+}
+
+p{
+    text-align: center;
+    position: relative;
+    top: 65px;
+    font-size: 50px;
+}
+    </STYle>
+</body>
+</html>

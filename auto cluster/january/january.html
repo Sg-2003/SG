@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function ch(){ 
+        a=document.getElementById("t1").value
+          b=parseInt(a)
+
+        switch(b){
+            case 1: document.getElementById("d2").innerHTML="JANUARY"
+            break
+
+            case 2:document.getElementById("d2").innerHTML="FEBRUARY"
+            break
+
+            case 3:document.getElementById("d2").innerHTML="MARCH"
+            break
+            
+            case 4:document.getElementById("d2").innerHTML="APRIL"
+            break
+
+            case 5:document.getElementById("d2").innerHTML="MAY"
+            break
+            
+            case 6:document.getElementById("d2").innerHTML="JUNE"
+            break
+            
+            case 7:document.getElementById("d2").innerHTML="JULY"
+            break
+
+            case 8:document.getElementById("d2").innerHTML="AUGEST"
+            break
+
+            case 9:document.getElementById("d2").innerHTML="SEPTEMBER"
+            break
+
+            case 10:document.getElementById("d2").innerHTML="OCTOBER"
+            break
+
+            case 11:document.getElementById("d2").innerHTML="NOVEMBER"
+            break
+
+            case 12:document.getElementById("d2").innerHTML="DECEMBER"
+            break
+
+            default:document.getElementById("d2").innerHTML="ENTER A VALID NUMBER"
+        }
+    }
+    </script>
+</head>
+<body>
+    <center> <div style="background-color: cyan;width:50%;border-radius:2%;"> 
+        <h1>Monthly Schedule 2023</h1>
+        <h3>Check Month Here</h3>
+    <input type="text" id="t1" placeholder="ENTER A NUMBER"> <br><br>
+    <input type="button" onclick="ch()" value="ENTER" style="background-color:gray;">
+    <P id="d2"></P> 
+</div></center>
+</body>
+</html>
